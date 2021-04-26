@@ -6,7 +6,7 @@ import sys
 import os
 import logging
 
-logging.basicConfig(format="[%(levelname)s][%(asciitime)s] %(message)s")
+# logging.basicConfig(format="[%(levelname)s][%(asciitime)s] %(message)s")
 logger = logging.getLogger()
 logger.setLevel(os.environ.get("LOG_LEVEL", logging.INFO))
 PORT = os.environ.get("AUTHZ_PORT", 9090)
